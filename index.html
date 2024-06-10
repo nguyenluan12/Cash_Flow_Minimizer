@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Minimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cash Flow Minimizer</h1>
+    <div id="input-section">
+        <div class="box">
+            <div class="form-group">
+                <label for="numBanks">Number of Persons</label>
+                <input type="number" id="numPersons" min="1" />
+                <div id="persons-info"></div>
+                <button onclick="addPersonInfo()" style="margin-top: 5px;">Add Person</button>
+            </div>
+            <div class="transactions">
+                <div class="form-group">
+                    <label for="numTransactions">Number of Transactions</label>
+                    <input type="number" id="numTransactions" min="1" />
+                    <div id="transactions-info"></div>
+                    <button onclick="addTransactionInfo()">Add Transaction</button>
+                </div>
+            </div>
+            <button onclick="calculate()" class="submit">Submit</button>
+        </div>
+    </div>
+    <div id="output-section">
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
